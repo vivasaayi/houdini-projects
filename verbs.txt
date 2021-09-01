@@ -1,0 +1,614 @@
+>>> hou.sopNodeTypeCategory().nodeVerbs()
+{'groupfindpath': <hou.SopVerb groupfindpath>, 'attribvop': <hou.SopVerb attribvop>, 
+'captureattribunpack': <hou.SopVerb captureattribunpack>, 'edgedivide': <hou.SopVerb 
+edgedivide>, 'volumeblur': <hou.SopVerb volumeblur>, 'agentunpack': <hou.SopVerb agen
+tunpack>, 'surfacesplat': <hou.SopVerb surfacesplat>, 'vdbactivate': <hou.SopVerb vdb
+activate>, 'topnetsop': <hou.SopVerb topnetsop>, 'skin': <hou.SopVerb skin>, 'volumes
+plice': <hou.SopVerb volumesplice>, 'font': <hou.SopVerb font>, 'volumemerge': <hou.S
+opVerb volumemerge>, 'attribreorient': <hou.SopVerb attribreorient>, 'opencl': <hou.S
+opVerb opencl>, 'texture': <hou.SopVerb texture>, 'unpackpoints': <hou.SopVerb unpack
+points>, 'add': <hou.SopVerb add>, 'intersectionanalysis': <hou.SopVerb intersectiona
+nalysis>, 'isooffset': <hou.SopVerb isooffset>, 'carve': <hou.SopVerb carve>, 'topotr
+ansfer': <hou.SopVerb topotransfer>, 'attribfromvolume': <hou.SopVerb attribfromvolum
+e>, 'polysoup': <hou.SopVerb polysoup>, 'bonedeform': <hou.SopVerb bonedeform>, 'poly
+frame': <hou.SopVerb polyframe>, 'matchtopology': <hou.SopVerb matchtopology>, 'volum
+eopticalflow': <hou.SopVerb volumeopticalflow>, 'grid': <hou.SopVerb grid>, 'rest': <
+hou.SopVerb rest>, 'hairclump': <hou.SopVerb hairclump>, 'blast': <hou.SopVerb blast>
+, 'pointgenerate': <hou.SopVerb pointgenerate>, 'name': <hou.SopVerb name>, 'volumemi
+x': <hou.SopVerb volumemix>, 'vdblod': <hou.SopVerb vdblod>, 'convertvdb': <hou.SopVe
+rb convertvdb>, 'edgestraighten': <hou.SopVerb edgestraighten>, 'vdbadvectpoints': <h
+ou.SopVerb vdbadvectpoints>, 'kinefx::resamplesplinetransforms': <hou.SopVerb kinefx:
+:resamplesplinetransforms>, 'watershed': <hou.SopVerb watershed>, 'xform': <hou.SopVe
+rb xform>, 'vdbrenormalizesdf': <hou.SopVerb vdbrenormalizesdf>, 'merge': <hou.SopVer
+b merge>, 'vdb': <hou.SopVerb vdb>, 'vdbreshapesdf': <hou.SopVerb vdbreshapesdf>, 'ou
+tput': <hou.SopVerb output>, 'volumefeather': <hou.SopVerb volumefeather>, 'groupdele
+te': <hou.SopVerb groupdelete>, 'copytopoints': <hou.SopVerb copytopoints>, 'uvlayout
+::3.0': <hou.SopVerb uvlayout::3.0>, 'uvunwrap': <hou.SopVerb uvunwrap>, 'volumefroma
+ttrib': <hou.SopVerb volumefromattrib>, 'uvflatten::3.0': <hou.SopVerb uvflatten::3.0
+>, 'triangulate2d::2.0': <hou.SopVerb triangulate2d::2.0>, 'intersectionstitch': <hou
+.SopVerb intersectionstitch>, 'vdbfracture': <hou.SopVerb vdbfracture>, 'kinefx::moti
+onclipunpack': <hou.SopVerb kinefx::motionclipunpack>, 'measure': <hou.SopVerb measur
+e>, 'detangle': <hou.SopVerb detangle>, 'vdbfromparticles': <hou.SopVerb vdbfromparti
+cles>, 'volumevop': <hou.SopVerb volumevop>, 'vdbvectorsplit': <hou.SopVerb vdbvector
+split>, 'grouprange': <hou.SopVerb grouprange>, 'vdbpointsdelete': <hou.SopVerb vdbpo
+intsdelete>, 'kinefx::rigattribvop': <hou.SopVerb kinefx::rigattribvop>, 'tube': <hou
+.SopVerb tube>, 'edgetransport': <hou.SopVerb edgetransport>, 'vdbactivatesdf': <hou.
+SopVerb vdbactivatesdf>, 'extracttransform': <hou.SopVerb extracttransform>, 'vdbpoin
+tsgroup': <hou.SopVerb vdbpointsgroup>, 'vdbtopologytosdf': <hou.SopVerb vdbtopologyt
+osdf>, 'tetrahedralize': <hou.SopVerb tetrahedralize>, 'vdbdiagnostics': <hou.SopVerb
+ vdbdiagnostics>, 'kinefx::usdanimimport': <hou.SopVerb kinefx::usdanimimport>, 'vdba
+nalysis': <hou.SopVerb vdbanalysis>, 'knife': <hou.SopVerb knife>, 'polydoctor': <hou
+.SopVerb polydoctor>, 'ends': <hou.SopVerb ends>, 'primitivesplit': <hou.SopVerb prim
+itivesplit>, 'attribfromparm': <hou.SopVerb attribfromparm>, 'vdbvisualizetree': <hou
+.SopVerb vdbvisualizetree>, 'uvproject': <hou.SopVerb uvproject>, 'guidemask': <hou.S
+opVerb guidemask>, 'vdbmorphsdf': <hou.SopVerb vdbmorphsdf>, 'vdbclip': <hou.SopVerb 
+vdbclip>, 'polyreduce::2.0': <hou.SopVerb polyreduce::2.0>, 'volumebound': <hou.SopVe
+rb volumebound>, 'box': <hou.SopVerb box>, 'convert': <hou.SopVerb convert>, 'orienta
+longcurve': <hou.SopVerb orientalongcurve>, 'volumeslice': <hou.SopVerb volumeslice>,
+ 'reverse': <hou.SopVerb reverse>, 'remesh': <hou.SopVerb remesh>, 'invokegraph': <ho
+u.SopVerb invokegraph>, 'fuse::2.0': <hou.SopVerb fuse::2.0>, 'boolean::2.0': <hou.So
+pVerb boolean::2.0>, 'facet': <hou.SopVerb facet>, 'uvflatten::2.0': <hou.SopVerb uvf
+latten::2.0>, 'sblend::2.0': <hou.SopVerb sblend::2.0>, 'grouptransfer': <hou.SopVerb
+ grouptransfer>, 'kinefx::motionclipmergejoints': <hou.SopVerb kinefx::motionclipmerg
+ejoints>, 'pack': <hou.SopVerb pack>, 'groupcombine': <hou.SopVerb groupcombine>, 'po
+lybevel::3.0': <hou.SopVerb polybevel::3.0>, 'primitive': <hou.SopVerb primitive>, 'd
+ivide': <hou.SopVerb divide>, 'vdbcombine': <hou.SopVerb vdbcombine>, 'smoothfill': <
+hou.SopVerb smoothfill>, 'blendshapes': <hou.SopVerb blendshapes>, 'bound': <hou.SopV
+erb bound>, 'vdbsmooth': <hou.SopVerb vdbsmooth>, 'vdbpotentialflow': <hou.SopVerb vd
+bpotentialflow>, 'volumerasterizeparticles': <hou.SopVerb volumerasterizeparticles>, 
+'enumerate': <hou.SopVerb enumerate>, 'attribcopy': <hou.SopVerb attribcopy>, 'conver
+tvdbpoints': <hou.SopVerb convertvdbpoints>, 'circlefromedges': <hou.SopVerb circlefr
+omedges>, 'measure::2.0': <hou.SopVerb measure::2.0>, 'blendshapes::2.0': <hou.SopVer
+b blendshapes::2.0>, 'attribcast': <hou.SopVerb attribcast>, 'volumebreak': <hou.SopV
+erb volumebreak>, 'vdbvectormerge': <hou.SopVerb vdbvectormerge>, 'voronoisplit': <ho
+u.SopVerb voronoisplit>, 'shapediff': <hou.SopVerb shapediff>, 'subdivide': <hou.SopV
+erb subdivide>, 'sweep::2.0': <hou.SopVerb sweep::2.0>, 'attribswap': <hou.SopVerb at
+tribswap>, 'switchif': <hou.SopVerb switchif>, 'bonecapturebiharmonic': <hou.SopVerb 
+bonecapturebiharmonic>, 'tetrasurface': <hou.SopVerb tetrasurface>, 'uvtransform::2.0
+': <hou.SopVerb uvtransform::2.0>, 'groupcreate': <hou.SopVerb groupcreate>, 'sblend'
+: <hou.SopVerb sblend>, 'polycut': <hou.SopVerb polycut>, 'sort': <hou.SopVerb sort>,
+ 'volumeresample': <hou.SopVerb volumeresample>, 'kinefx::usdskinimport': <hou.SopVer
+b kinefx::usdskinimport>, 'vdbadvectsdf': <hou.SopVerb vdbadvectsdf>, 'volumereduce':
+ <hou.SopVerb volumereduce>, 'volumesdf': <hou.SopVerb volumesdf>, 'vdbocclusionmask'
+: <hou.SopVerb vdbocclusionmask>, 'captureattribpack': <hou.SopVerb captureattribpack
+>, 'attribcreate::2.0': <hou.SopVerb attribcreate::2.0>, 'splitpoints': <hou.SopVerb 
+splitpoints>, 'volume': <hou.SopVerb volume>, 'windingnumber': <hou.SopVerb windingnu
+mber>, 'copytopoints::2.0': <hou.SopVerb copytopoints::2.0>, 'line': <hou.SopVerb lin
+e>, 'unpack': <hou.SopVerb unpack>, 'circle': <hou.SopVerb circle>, 'volumecompress':
+ <hou.SopVerb volumecompress>, 'smooth::2.0': <hou.SopVerb smooth::2.0>, 'join': <hou
+.SopVerb join>, 'volumefft': <hou.SopVerb volumefft>, 'dissolve::2.0': <hou.SopVerb d
+issolve::2.0>, 'sphere': <hou.SopVerb sphere>, 'vertexsplit': <hou.SopVerb vertexspli
+t>, 'vdbfrompolygons': <hou.SopVerb vdbfrompolygons>, 'grouppromote': <hou.SopVerb gr
+ouppromote>, 'extractcentroid': <hou.SopVerb extractcentroid>, 'copyxform': <hou.SopV
+erb copyxform>, 'uvlayout::2.0': <hou.SopVerb uvlayout::2.0>, 'rewire': <hou.SopVerb 
+rewire>, 'vdbsegmentbyconnectivity': <hou.SopVerb vdbsegmentbyconnectivity>, 'vdbsmoo
+thsdf': <hou.SopVerb vdbsmoothsdf>, 'scatter::2.0': <hou.SopVerb scatter::2.0>, 'erro
+r': <hou.SopVerb error>, 'xformaxis': <hou.SopVerb xformaxis>, 'volumearrivaltime': <
+hou.SopVerb volumearrivaltime>, 'delete': <hou.SopVerb delete>, 'control': <hou.SopVe
+rb control>, 'volumeconvolve3': <hou.SopVerb volumeconvolve3>, 'xformbyattrib': <hou.
+SopVerb xformbyattrib>, 'convexdecomposition': <hou.SopVerb convexdecomposition>, 'cl
+ip': <hou.SopVerb clip>, 'groupcopy': <hou.SopVerb groupcopy>, 'attribute': <hou.SopV
+erb attribute>, 'cop2net': <hou.SopVerb cop2net>, 'cluster': <hou.SopVerb cluster>, '
+vdbtospheres': <hou.SopVerb vdbtospheres>, 'attribpromote': <hou.SopVerb attribpromot
+e>, 'file': <hou.SopVerb file>, 'remesh::2.0': <hou.SopVerb remesh::2.0>, 'vdbresampl
+e': <hou.SopVerb vdbresample>, 'null': <hou.SopVerb null>, 'ray': <hou.SopVerb ray>, 
+'attribcomposite': <hou.SopVerb attribcomposite>, 'tetpartition': <hou.SopVerb tetpar
+tition>, 'grouprename': <hou.SopVerb grouprename>, 'polyfill': <hou.SopVerb polyfill>
+, 'volumeanalysis': <hou.SopVerb volumeanalysis>, 'volumevisualization': <hou.SopVerb
+ volumevisualization>, 'kinefx::computerigpose': <hou.SopVerb kinefx::computerigpose>
+, 'resample': <hou.SopVerb resample>, 'uvautoseam': <hou.SopVerb uvautoseam>, 'triang
+ulate2d::3.0': <hou.SopVerb triangulate2d::3.0>, 'deltamush': <hou.SopVerb deltamush>
+, 'solidify': <hou.SopVerb solidify>, 'attribinterpolate': <hou.SopVerb attribinterpo
+late>, 'edgeequalize': <hou.SopVerb edgeequalize>, 'groupexpand': <hou.SopVerb groupe
+xpand>, 'normal': <hou.SopVerb normal>, 'hairgencore': <hou.SopVerb hairgencore>, 'vd
+bprojectnondivergent': <hou.SopVerb vdbprojectnondivergent>, 'guideprocesscore': <hou
+.SopVerb guideprocesscore>, 'kinefx::computetransform': <hou.SopVerb kinefx::computet
+ransform>, 'connectivity': <hou.SopVerb connectivity>, 'shrinkwrap::2.0': <hou.SopVer
+b shrinkwrap::2.0>, 'fuse': <hou.SopVerb fuse>, 'packpoints': <hou.SopVerb packpoints
+>, 'peak': <hou.SopVerb peak>, 'revolve': <hou.SopVerb revolve>, 'tetcraft': <hou.Sop
+Verb tetcraft>, 'volumeresize': <hou.SopVerb volumeresize>, 'polyexpand2d': <hou.SopV
+erb polyexpand2d>, 'torus': <hou.SopVerb torus>, 'inflate': <hou.SopVerb inflate>, 'c
+urve': <hou.SopVerb curve>, 'stash': <hou.SopVerb stash>, 'attribmirror': <hou.SopVer
+b attribmirror>, 'switch': <hou.SopVerb switch>, 'volumepatch': <hou.SopVerb volumepa
+tch>, 'attribstringedit': <hou.SopVerb attribstringedit>, 'volumebin': <hou.SopVerb v
+olumebin>}
+>>> 
+
+
+
+
+
+
+>>> hou.objNodeTypeCategory().nodeVerbs()
+{'groupfindpath': <hou.SopVerb groupfindpath>, 'attribvop': <hou.SopVerb attribvop>
+, 'captureattribunpack': <hou.SopVerb captureattribunpack>, 'edgedivide': <hou.SopV
+erb edgedivide>, 'volumeblur': <hou.SopVerb volumeblur>, 'agentunpack': <hou.SopVer
+b agentunpack>, 'surfacesplat': <hou.SopVerb surfacesplat>, 'vdbactivate': <hou.Sop
+Verb vdbactivate>, 'topnetsop': <hou.SopVerb topnetsop>, 'skin': <hou.SopVerb skin>
+, 'volumesplice': <hou.SopVerb volumesplice>, 'font': <hou.SopVerb font>, 'volumeme
+rge': <hou.SopVerb volumemerge>, 'attribreorient': <hou.SopVerb attribreorient>, 'o
+pencl': <hou.SopVerb opencl>, 'texture': <hou.SopVerb texture>, 'unpackpoints': <ho
+u.SopVerb unpackpoints>, 'add': <hou.SopVerb add>, 'intersectionanalysis': <hou.Sop
+Verb intersectionanalysis>, 'isooffset': <hou.SopVerb isooffset>, 'carve': <hou.Sop
+Verb carve>, 'topotransfer': <hou.SopVerb topotransfer>, 'attribfromvolume': <hou.S
+opVerb attribfromvolume>, 'polysoup': <hou.SopVerb polysoup>, 'bonedeform': <hou.So
+pVerb bonedeform>, 'polyframe': <hou.SopVerb polyframe>, 'matchtopology': <hou.SopV
+erb matchtopology>, 'volumeopticalflow': <hou.SopVerb volumeopticalflow>, 'grid': <
+hou.SopVerb grid>, 'rest': <hou.SopVerb rest>, 'hairclump': <hou.SopVerb hairclump>
+, 'blast': <hou.SopVerb blast>, 'pointgenerate': <hou.SopVerb pointgenerate>, 'name
+': <hou.SopVerb name>, 'volumemix': <hou.SopVerb volumemix>, 'vdblod': <hou.SopVerb
+ vdblod>, 'convertvdb': <hou.SopVerb convertvdb>, 'edgestraighten': <hou.SopVerb ed
+gestraighten>, 'vdbadvectpoints': <hou.SopVerb vdbadvectpoints>, 'kinefx::resamples
+plinetransforms': <hou.SopVerb kinefx::resamplesplinetransforms>, 'watershed': <hou
+.SopVerb watershed>, 'xform': <hou.SopVerb xform>, 'vdbrenormalizesdf': <hou.SopVer
+b vdbrenormalizesdf>, 'merge': <hou.SopVerb merge>, 'vdb': <hou.SopVerb vdb>, 'vdbr
+eshapesdf': <hou.SopVerb vdbreshapesdf>, 'output': <hou.SopVerb output>, 'volumefea
+ther': <hou.SopVerb volumefeather>, 'groupdelete': <hou.SopVerb groupdelete>, 'copy
+topoints': <hou.SopVerb copytopoints>, 'uvlayout::3.0': <hou.SopVerb uvlayout::3.0>
+, 'uvunwrap': <hou.SopVerb uvunwrap>, 'volumefromattrib': <hou.SopVerb volumefromat
+trib>, 'uvflatten::3.0': <hou.SopVerb uvflatten::3.0>, 'triangulate2d::2.0': <hou.S
+opVerb triangulate2d::2.0>, 'intersectionstitch': <hou.SopVerb intersectionstitch>,
+ 'vdbfracture': <hou.SopVerb vdbfracture>, 'kinefx::motionclipunpack': <hou.SopVerb
+ kinefx::motionclipunpack>, 'measure': <hou.SopVerb measure>, 'detangle': <hou.SopV
+erb detangle>, 'vdbfromparticles': <hou.SopVerb vdbfromparticles>, 'volumevop': <ho
+u.SopVerb volumevop>, 'vdbvectorsplit': <hou.SopVerb vdbvectorsplit>, 'grouprange':
+ <hou.SopVerb grouprange>, 'vdbpointsdelete': <hou.SopVerb vdbpointsdelete>, 'kinef
+x::rigattribvop': <hou.SopVerb kinefx::rigattribvop>, 'tube': <hou.SopVerb tube>, '
+edgetransport': <hou.SopVerb edgetransport>, 'vdbactivatesdf': <hou.SopVerb vdbacti
+vatesdf>, 'extracttransform': <hou.SopVerb extracttransform>, 'vdbpointsgroup': <ho
+u.SopVerb vdbpointsgroup>, 'vdbtopologytosdf': <hou.SopVerb vdbtopologytosdf>, 'tet
+rahedralize': <hou.SopVerb tetrahedralize>, 'vdbdiagnostics': <hou.SopVerb vdbdiagn
+ostics>, 'kinefx::usdanimimport': <hou.SopVerb kinefx::usdanimimport>, 'vdbanalysis
+': <hou.SopVerb vdbanalysis>, 'knife': <hou.SopVerb knife>, 'polydoctor': <hou.SopV
+erb polydoctor>, 'ends': <hou.SopVerb ends>, 'primitivesplit': <hou.SopVerb primiti
+vesplit>, 'attribfromparm': <hou.SopVerb attribfromparm>, 'vdbvisualizetree': <hou.
+SopVerb vdbvisualizetree>, 'uvproject': <hou.SopVerb uvproject>, 'guidemask': <hou.
+SopVerb guidemask>, 'vdbmorphsdf': <hou.SopVerb vdbmorphsdf>, 'vdbclip': <hou.SopVe
+rb vdbclip>, 'polyreduce::2.0': <hou.SopVerb polyreduce::2.0>, 'volumebound': <hou.
+SopVerb volumebound>, 'box': <hou.SopVerb box>, 'convert': <hou.SopVerb convert>, '
+orientalongcurve': <hou.SopVerb orientalongcurve>, 'volumeslice': <hou.SopVerb volu
+meslice>, 'reverse': <hou.SopVerb reverse>, 'remesh': <hou.SopVerb remesh>, 'invoke
+graph': <hou.SopVerb invokegraph>, 'fuse::2.0': <hou.SopVerb fuse::2.0>, 'boolean::
+2.0': <hou.SopVerb boolean::2.0>, 'facet': <hou.SopVerb facet>, 'uvflatten::2.0': <
+hou.SopVerb uvflatten::2.0>, 'sblend::2.0': <hou.SopVerb sblend::2.0>, 'grouptransf
+er': <hou.SopVerb grouptransfer>, 'kinefx::motionclipmergejoints': <hou.SopVerb kin
+efx::motionclipmergejoints>, 'pack': <hou.SopVerb pack>, 'groupcombine': <hou.SopVe
+rb groupcombine>, 'polybevel::3.0': <hou.SopVerb polybevel::3.0>, 'primitive': <hou
+.SopVerb primitive>, 'divide': <hou.SopVerb divide>, 'vdbcombine': <hou.SopVerb vdb
+combine>, 'smoothfill': <hou.SopVerb smoothfill>, 'blendshapes': <hou.SopVerb blend
+shapes>, 'bound': <hou.SopVerb bound>, 'vdbsmooth': <hou.SopVerb vdbsmooth>, 'vdbpo
+tentialflow': <hou.SopVerb vdbpotentialflow>, 'volumerasterizeparticles': <hou.SopV
+erb volumerasterizeparticles>, 'enumerate': <hou.SopVerb enumerate>, 'attribcopy': 
+<hou.SopVerb attribcopy>, 'convertvdbpoints': <hou.SopVerb convertvdbpoints>, 'circ
+lefromedges': <hou.SopVerb circlefromedges>, 'measure::2.0': <hou.SopVerb measure::
+2.0>, 'blendshapes::2.0': <hou.SopVerb blendshapes::2.0>, 'attribcast': <hou.SopVer
+b attribcast>, 'volumebreak': <hou.SopVerb volumebreak>, 'vdbvectormerge': <hou.Sop
+Verb vdbvectormerge>, 'voronoisplit': <hou.SopVerb voronoisplit>, 'shapediff': <hou
+.SopVerb shapediff>, 'subdivide': <hou.SopVerb subdivide>, 'sweep::2.0': <hou.SopVe
+rb sweep::2.0>, 'attribswap': <hou.SopVerb attribswap>, 'switchif': <hou.SopVerb sw
+itchif>, 'bonecapturebiharmonic': <hou.SopVerb bonecapturebiharmonic>, 'tetrasurfac
+e': <hou.SopVerb tetrasurface>, 'uvtransform::2.0': <hou.SopVerb uvtransform::2.0>,
+ 'groupcreate': <hou.SopVerb groupcreate>, 'sblend': <hou.SopVerb sblend>, 'polycut
+': <hou.SopVerb polycut>, 'sort': <hou.SopVerb sort>, 'volumeresample': <hou.SopVer
+b volumeresample>, 'kinefx::usdskinimport': <hou.SopVerb kinefx::usdskinimport>, 'v
+dbadvectsdf': <hou.SopVerb vdbadvectsdf>, 'volumereduce': <hou.SopVerb volumereduce
+>, 'volumesdf': <hou.SopVerb volumesdf>, 'vdbocclusionmask': <hou.SopVerb vdbocclus
+ionmask>, 'captureattribpack': <hou.SopVerb captureattribpack>, 'attribcreate::2.0'
+: <hou.SopVerb attribcreate::2.0>, 'splitpoints': <hou.SopVerb splitpoints>, 'volum
+e': <hou.SopVerb volume>, 'windingnumber': <hou.SopVerb windingnumber>, 'copytopoin
+ts::2.0': <hou.SopVerb copytopoints::2.0>, 'line': <hou.SopVerb line>, 'unpack': <h
+ou.SopVerb unpack>, 'circle': <hou.SopVerb circle>, 'volumecompress': <hou.SopVerb 
+volumecompress>, 'smooth::2.0': <hou.SopVerb smooth::2.0>, 'join': <hou.SopVerb joi
+n>, 'volumefft': <hou.SopVerb volumefft>, 'dissolve::2.0': <hou.SopVerb dissolve::2
+.0>, 'sphere': <hou.SopVerb sphere>, 'vertexsplit': <hou.SopVerb vertexsplit>, 'vdb
+frompolygons': <hou.SopVerb vdbfrompolygons>, 'grouppromote': <hou.SopVerb grouppro
+mote>, 'extractcentroid': <hou.SopVerb extractcentroid>, 'copyxform': <hou.SopVerb 
+copyxform>, 'uvlayout::2.0': <hou.SopVerb uvlayout::2.0>, 'rewire': <hou.SopVerb re
+wire>, 'vdbsegmentbyconnectivity': <hou.SopVerb vdbsegmentbyconnectivity>, 'vdbsmoo
+thsdf': <hou.SopVerb vdbsmoothsdf>, 'scatter::2.0': <hou.SopVerb scatter::2.0>, 'er
+ror': <hou.SopVerb error>, 'xformaxis': <hou.SopVerb xformaxis>, 'volumearrivaltime
+': <hou.SopVerb volumearrivaltime>, 'delete': <hou.SopVerb delete>, 'control': <hou
+.SopVerb control>, 'volumeconvolve3': <hou.SopVerb volumeconvolve3>, 'xformbyattrib
+': <hou.SopVerb xformbyattrib>, 'convexdecomposition': <hou.SopVerb convexdecomposi
+tion>, 'clip': <hou.SopVerb clip>, 'groupcopy': <hou.SopVerb groupcopy>, 'attribute
+': <hou.SopVerb attribute>, 'cop2net': <hou.SopVerb cop2net>, 'cluster': <hou.SopVe
+rb cluster>, 'vdbtospheres': <hou.SopVerb vdbtospheres>, 'attribpromote': <hou.SopV
+erb attribpromote>, 'file': <hou.SopVerb file>, 'remesh::2.0': <hou.SopVerb remesh:
+:2.0>, 'vdbresample': <hou.SopVerb vdbresample>, 'null': <hou.SopVerb null>, 'ray':
+ <hou.SopVerb ray>, 'attribcomposite': <hou.SopVerb attribcomposite>, 'tetpartition
+': <hou.SopVerb tetpartition>, 'grouprename': <hou.SopVerb grouprename>, 'polyfill'
+: <hou.SopVerb polyfill>, 'volumeanalysis': <hou.SopVerb volumeanalysis>, 'volumevi
+sualization': <hou.SopVerb volumevisualization>, 'kinefx::computerigpose': <hou.Sop
+Verb kinefx::computerigpose>, 'resample': <hou.SopVerb resample>, 'uvautoseam': <ho
+u.SopVerb uvautoseam>, 'triangulate2d::3.0': <hou.SopVerb triangulate2d::3.0>, 'del
+tamush': <hou.SopVerb deltamush>, 'solidify': <hou.SopVerb solidify>, 'attribinterp
+olate': <hou.SopVerb attribinterpolate>, 'edgeequalize': <hou.SopVerb edgeequalize>
+, 'groupexpand': <hou.SopVerb groupexpand>, 'normal': <hou.SopVerb normal>, 'hairge
+ncore': <hou.SopVerb hairgencore>, 'vdbprojectnondivergent': <hou.SopVerb vdbprojec
+tnondivergent>, 'guideprocesscore': <hou.SopVerb guideprocesscore>, 'kinefx::comput
+etransform': <hou.SopVerb kinefx::computetransform>, 'connectivity': <hou.SopVerb c
+onnectivity>, 'shrinkwrap::2.0': <hou.SopVerb shrinkwrap::2.0>, 'fuse': <hou.SopVer
+b fuse>, 'packpoints': <hou.SopVerb packpoints>, 'peak': <hou.SopVerb peak>, 'revol
+ve': <hou.SopVerb revolve>, 'tetcraft': <hou.SopVerb tetcraft>, 'volumeresize': <ho
+u.SopVerb volumeresize>, 'polyexpand2d': <hou.SopVerb polyexpand2d>, 'torus': <hou.
+SopVerb torus>, 'inflate': <hou.SopVerb inflate>, 'curve': <hou.SopVerb curve>, 'st
+ash': <hou.SopVerb stash>, 'attribmirror': <hou.SopVerb attribmirror>, 'switch': <h
+ou.SopVerb switch>, 'volumepatch': <hou.SopVerb volumepatch>, 'attribstringedit': <
+hou.SopVerb attribstringedit>, 'volumebin': <hou.SopVerb volumebin>}
+>>> 
+
+
+
+
+
+>>> 
+>>> hou.dopNodeTypeCategory().nodeVerbs()
+{'groupfindpath': <hou.SopVerb groupfindpath>, 'attribvop': <hou.SopVerb attribvop>
+, 'captureattribunpack': <hou.SopVerb captureattribunpack>, 'edgedivide': <hou.SopV
+erb edgedivide>, 'volumeblur': <hou.SopVerb volumeblur>, 'agentunpack': <hou.SopVer
+b agentunpack>, 'surfacesplat': <hou.SopVerb surfacesplat>, 'vdbactivate': <hou.Sop
+Verb vdbactivate>, 'topnetsop': <hou.SopVerb topnetsop>, 'skin': <hou.SopVerb skin>
+, 'volumesplice': <hou.SopVerb volumesplice>, 'font': <hou.SopVerb font>, 'volumeme
+rge': <hou.SopVerb volumemerge>, 'attribreorient': <hou.SopVerb attribreorient>, 'o
+pencl': <hou.SopVerb opencl>, 'texture': <hou.SopVerb texture>, 'unpackpoints': <ho
+u.SopVerb unpackpoints>, 'add': <hou.SopVerb add>, 'intersectionanalysis': <hou.Sop
+Verb intersectionanalysis>, 'isooffset': <hou.SopVerb isooffset>, 'carve': <hou.Sop
+Verb carve>, 'topotransfer': <hou.SopVerb topotransfer>, 'attribfromvolume': <hou.S
+opVerb attribfromvolume>, 'polysoup': <hou.SopVerb polysoup>, 'bonedeform': <hou.So
+pVerb bonedeform>, 'polyframe': <hou.SopVerb polyframe>, 'matchtopology': <hou.SopV
+erb matchtopology>, 'volumeopticalflow': <hou.SopVerb volumeopticalflow>, 'grid': <
+hou.SopVerb grid>, 'rest': <hou.SopVerb rest>, 'hairclump': <hou.SopVerb hairclump>
+, 'blast': <hou.SopVerb blast>, 'pointgenerate': <hou.SopVerb pointgenerate>, 'name
+': <hou.SopVerb name>, 'volumemix': <hou.SopVerb volumemix>, 'vdblod': <hou.SopVerb
+ vdblod>, 'convertvdb': <hou.SopVerb convertvdb>, 'edgestraighten': <hou.SopVerb ed
+gestraighten>, 'vdbadvectpoints': <hou.SopVerb vdbadvectpoints>, 'kinefx::resamples
+plinetransforms': <hou.SopVerb kinefx::resamplesplinetransforms>, 'watershed': <hou
+.SopVerb watershed>, 'xform': <hou.SopVerb xform>, 'vdbrenormalizesdf': <hou.SopVer
+b vdbrenormalizesdf>, 'merge': <hou.SopVerb merge>, 'vdb': <hou.SopVerb vdb>, 'vdbr
+eshapesdf': <hou.SopVerb vdbreshapesdf>, 'output': <hou.SopVerb output>, 'volumefea
+ther': <hou.SopVerb volumefeather>, 'groupdelete': <hou.SopVerb groupdelete>, 'copy
+topoints': <hou.SopVerb copytopoints>, 'uvlayout::3.0': <hou.SopVerb uvlayout::3.0>
+, 'uvunwrap': <hou.SopVerb uvunwrap>, 'volumefromattrib': <hou.SopVerb volumefromat
+trib>, 'uvflatten::3.0': <hou.SopVerb uvflatten::3.0>, 'triangulate2d::2.0': <hou.S
+opVerb triangulate2d::2.0>, 'intersectionstitch': <hou.SopVerb intersectionstitch>,
+ 'vdbfracture': <hou.SopVerb vdbfracture>, 'kinefx::motionclipunpack': <hou.SopVerb
+ kinefx::motionclipunpack>, 'measure': <hou.SopVerb measure>, 'detangle': <hou.SopV
+erb detangle>, 'vdbfromparticles': <hou.SopVerb vdbfromparticles>, 'volumevop': <ho
+u.SopVerb volumevop>, 'vdbvectorsplit': <hou.SopVerb vdbvectorsplit>, 'grouprange':
+ <hou.SopVerb grouprange>, 'vdbpointsdelete': <hou.SopVerb vdbpointsdelete>, 'kinef
+x::rigattribvop': <hou.SopVerb kinefx::rigattribvop>, 'tube': <hou.SopVerb tube>, '
+edgetransport': <hou.SopVerb edgetransport>, 'vdbactivatesdf': <hou.SopVerb vdbacti
+vatesdf>, 'extracttransform': <hou.SopVerb extracttransform>, 'vdbpointsgroup': <ho
+u.SopVerb vdbpointsgroup>, 'vdbtopologytosdf': <hou.SopVerb vdbtopologytosdf>, 'tet
+rahedralize': <hou.SopVerb tetrahedralize>, 'vdbdiagnostics': <hou.SopVerb vdbdiagn
+ostics>, 'kinefx::usdanimimport': <hou.SopVerb kinefx::usdanimimport>, 'vdbanalysis
+': <hou.SopVerb vdbanalysis>, 'knife': <hou.SopVerb knife>, 'polydoctor': <hou.SopV
+erb polydoctor>, 'ends': <hou.SopVerb ends>, 'primitivesplit': <hou.SopVerb primiti
+vesplit>, 'attribfromparm': <hou.SopVerb attribfromparm>, 'vdbvisualizetree': <hou.
+SopVerb vdbvisualizetree>, 'uvproject': <hou.SopVerb uvproject>, 'guidemask': <hou.
+SopVerb guidemask>, 'vdbmorphsdf': <hou.SopVerb vdbmorphsdf>, 'vdbclip': <hou.SopVe
+rb vdbclip>, 'polyreduce::2.0': <hou.SopVerb polyreduce::2.0>, 'volumebound': <hou.
+SopVerb volumebound>, 'box': <hou.SopVerb box>, 'convert': <hou.SopVerb convert>, '
+orientalongcurve': <hou.SopVerb orientalongcurve>, 'volumeslice': <hou.SopVerb volu
+meslice>, 'reverse': <hou.SopVerb reverse>, 'remesh': <hou.SopVerb remesh>, 'invoke
+graph': <hou.SopVerb invokegraph>, 'fuse::2.0': <hou.SopVerb fuse::2.0>, 'boolean::
+2.0': <hou.SopVerb boolean::2.0>, 'facet': <hou.SopVerb facet>, 'uvflatten::2.0': <
+hou.SopVerb uvflatten::2.0>, 'sblend::2.0': <hou.SopVerb sblend::2.0>, 'grouptransf
+er': <hou.SopVerb grouptransfer>, 'kinefx::motionclipmergejoints': <hou.SopVerb kin
+efx::motionclipmergejoints>, 'pack': <hou.SopVerb pack>, 'groupcombine': <hou.SopVe
+rb groupcombine>, 'polybevel::3.0': <hou.SopVerb polybevel::3.0>, 'primitive': <hou
+.SopVerb primitive>, 'divide': <hou.SopVerb divide>, 'vdbcombine': <hou.SopVerb vdb
+combine>, 'smoothfill': <hou.SopVerb smoothfill>, 'blendshapes': <hou.SopVerb blend
+shapes>, 'bound': <hou.SopVerb bound>, 'vdbsmooth': <hou.SopVerb vdbsmooth>, 'vdbpo
+tentialflow': <hou.SopVerb vdbpotentialflow>, 'volumerasterizeparticles': <hou.SopV
+erb volumerasterizeparticles>, 'enumerate': <hou.SopVerb enumerate>, 'attribcopy': 
+<hou.SopVerb attribcopy>, 'convertvdbpoints': <hou.SopVerb convertvdbpoints>, 'circ
+lefromedges': <hou.SopVerb circlefromedges>, 'measure::2.0': <hou.SopVerb measure::
+2.0>, 'blendshapes::2.0': <hou.SopVerb blendshapes::2.0>, 'attribcast': <hou.SopVer
+b attribcast>, 'volumebreak': <hou.SopVerb volumebreak>, 'vdbvectormerge': <hou.Sop
+Verb vdbvectormerge>, 'voronoisplit': <hou.SopVerb voronoisplit>, 'shapediff': <hou
+.SopVerb shapediff>, 'subdivide': <hou.SopVerb subdivide>, 'sweep::2.0': <hou.SopVe
+rb sweep::2.0>, 'attribswap': <hou.SopVerb attribswap>, 'switchif': <hou.SopVerb sw
+itchif>, 'bonecapturebiharmonic': <hou.SopVerb bonecapturebiharmonic>, 'tetrasurfac
+e': <hou.SopVerb tetrasurface>, 'uvtransform::2.0': <hou.SopVerb uvtransform::2.0>,
+ 'groupcreate': <hou.SopVerb groupcreate>, 'sblend': <hou.SopVerb sblend>, 'polycut
+': <hou.SopVerb polycut>, 'sort': <hou.SopVerb sort>, 'volumeresample': <hou.SopVer
+b volumeresample>, 'kinefx::usdskinimport': <hou.SopVerb kinefx::usdskinimport>, 'v
+dbadvectsdf': <hou.SopVerb vdbadvectsdf>, 'volumereduce': <hou.SopVerb volumereduce
+>, 'volumesdf': <hou.SopVerb volumesdf>, 'vdbocclusionmask': <hou.SopVerb vdbocclus
+ionmask>, 'captureattribpack': <hou.SopVerb captureattribpack>, 'attribcreate::2.0'
+: <hou.SopVerb attribcreate::2.0>, 'splitpoints': <hou.SopVerb splitpoints>, 'volum
+e': <hou.SopVerb volume>, 'windingnumber': <hou.SopVerb windingnumber>, 'copytopoin
+ts::2.0': <hou.SopVerb copytopoints::2.0>, 'line': <hou.SopVerb line>, 'unpack': <h
+ou.SopVerb unpack>, 'circle': <hou.SopVerb circle>, 'volumecompress': <hou.SopVerb 
+volumecompress>, 'smooth::2.0': <hou.SopVerb smooth::2.0>, 'join': <hou.SopVerb joi
+n>, 'volumefft': <hou.SopVerb volumefft>, 'dissolve::2.0': <hou.SopVerb dissolve::2
+.0>, 'sphere': <hou.SopVerb sphere>, 'vertexsplit': <hou.SopVerb vertexsplit>, 'vdb
+frompolygons': <hou.SopVerb vdbfrompolygons>, 'grouppromote': <hou.SopVerb grouppro
+mote>, 'extractcentroid': <hou.SopVerb extractcentroid>, 'copyxform': <hou.SopVerb 
+copyxform>, 'uvlayout::2.0': <hou.SopVerb uvlayout::2.0>, 'rewire': <hou.SopVerb re
+wire>, 'vdbsegmentbyconnectivity': <hou.SopVerb vdbsegmentbyconnectivity>, 'vdbsmoo
+thsdf': <hou.SopVerb vdbsmoothsdf>, 'scatter::2.0': <hou.SopVerb scatter::2.0>, 'er
+ror': <hou.SopVerb error>, 'xformaxis': <hou.SopVerb xformaxis>, 'volumearrivaltime
+': <hou.SopVerb volumearrivaltime>, 'delete': <hou.SopVerb delete>, 'control': <hou
+.SopVerb control>, 'volumeconvolve3': <hou.SopVerb volumeconvolve3>, 'xformbyattrib
+': <hou.SopVerb xformbyattrib>, 'convexdecomposition': <hou.SopVerb convexdecomposi
+tion>, 'clip': <hou.SopVerb clip>, 'groupcopy': <hou.SopVerb groupcopy>, 'attribute
+': <hou.SopVerb attribute>, 'cop2net': <hou.SopVerb cop2net>, 'cluster': <hou.SopVe
+rb cluster>, 'vdbtospheres': <hou.SopVerb vdbtospheres>, 'attribpromote': <hou.SopV
+erb attribpromote>, 'file': <hou.SopVerb file>, 'remesh::2.0': <hou.SopVerb remesh:
+:2.0>, 'vdbresample': <hou.SopVerb vdbresample>, 'null': <hou.SopVerb null>, 'ray':
+ <hou.SopVerb ray>, 'attribcomposite': <hou.SopVerb attribcomposite>, 'tetpartition
+': <hou.SopVerb tetpartition>, 'grouprename': <hou.SopVerb grouprename>, 'polyfill'
+: <hou.SopVerb polyfill>, 'volumeanalysis': <hou.SopVerb volumeanalysis>, 'volumevi
+sualization': <hou.SopVerb volumevisualization>, 'kinefx::computerigpose': <hou.Sop
+Verb kinefx::computerigpose>, 'resample': <hou.SopVerb resample>, 'uvautoseam': <ho
+u.SopVerb uvautoseam>, 'triangulate2d::3.0': <hou.SopVerb triangulate2d::3.0>, 'del
+tamush': <hou.SopVerb deltamush>, 'solidify': <hou.SopVerb solidify>, 'attribinterp
+olate': <hou.SopVerb attribinterpolate>, 'edgeequalize': <hou.SopVerb edgeequalize>
+, 'groupexpand': <hou.SopVerb groupexpand>, 'normal': <hou.SopVerb normal>, 'hairge
+ncore': <hou.SopVerb hairgencore>, 'vdbprojectnondivergent': <hou.SopVerb vdbprojec
+tnondivergent>, 'guideprocesscore': <hou.SopVerb guideprocesscore>, 'kinefx::comput
+etransform': <hou.SopVerb kinefx::computetransform>, 'connectivity': <hou.SopVerb c
+onnectivity>, 'shrinkwrap::2.0': <hou.SopVerb shrinkwrap::2.0>, 'fuse': <hou.SopVer
+b fuse>, 'packpoints': <hou.SopVerb packpoints>, 'peak': <hou.SopVerb peak>, 'revol
+ve': <hou.SopVerb revolve>, 'tetcraft': <hou.SopVerb tetcraft>, 'volumeresize': <ho
+u.SopVerb volumeresize>, 'polyexpand2d': <hou.SopVerb polyexpand2d>, 'torus': <hou.
+SopVerb torus>, 'inflate': <hou.SopVerb inflate>, 'curve': <hou.SopVerb curve>, 'st
+ash': <hou.SopVerb stash>, 'attribmirror': <hou.SopVerb attribmirror>, 'switch': <h
+ou.SopVerb switch>, 'volumepatch': <hou.SopVerb volumepatch>, 'attribstringedit': <
+hou.SopVerb attribstringedit>, 'volumebin': <hou.SopVerb volumebin>}
+>>> 
+
+
+
+
+
+
+
+
+
+>>> 
+>>> hou.cop2NodeTypeCategory().nodeVerbs()
+{'groupfindpath': <hou.SopVerb groupfindpath>, 'attribvop': <hou.SopVerb attribvop>
+, 'captureattribunpack': <hou.SopVerb captureattribunpack>, 'edgedivide': <hou.SopV
+erb edgedivide>, 'volumeblur': <hou.SopVerb volumeblur>, 'agentunpack': <hou.SopVer
+b agentunpack>, 'surfacesplat': <hou.SopVerb surfacesplat>, 'vdbactivate': <hou.Sop
+Verb vdbactivate>, 'topnetsop': <hou.SopVerb topnetsop>, 'skin': <hou.SopVerb skin>
+, 'volumesplice': <hou.SopVerb volumesplice>, 'font': <hou.SopVerb font>, 'volumeme
+rge': <hou.SopVerb volumemerge>, 'attribreorient': <hou.SopVerb attribreorient>, 'o
+pencl': <hou.SopVerb opencl>, 'texture': <hou.SopVerb texture>, 'unpackpoints': <ho
+u.SopVerb unpackpoints>, 'add': <hou.SopVerb add>, 'intersectionanalysis': <hou.Sop
+Verb intersectionanalysis>, 'isooffset': <hou.SopVerb isooffset>, 'carve': <hou.Sop
+Verb carve>, 'topotransfer': <hou.SopVerb topotransfer>, 'attribfromvolume': <hou.S
+opVerb attribfromvolume>, 'polysoup': <hou.SopVerb polysoup>, 'bonedeform': <hou.So
+pVerb bonedeform>, 'polyframe': <hou.SopVerb polyframe>, 'matchtopology': <hou.SopV
+erb matchtopology>, 'volumeopticalflow': <hou.SopVerb volumeopticalflow>, 'grid': <
+hou.SopVerb grid>, 'rest': <hou.SopVerb rest>, 'hairclump': <hou.SopVerb hairclump>
+, 'blast': <hou.SopVerb blast>, 'pointgenerate': <hou.SopVerb pointgenerate>, 'name
+': <hou.SopVerb name>, 'volumemix': <hou.SopVerb volumemix>, 'vdblod': <hou.SopVerb
+ vdblod>, 'convertvdb': <hou.SopVerb convertvdb>, 'edgestraighten': <hou.SopVerb ed
+gestraighten>, 'vdbadvectpoints': <hou.SopVerb vdbadvectpoints>, 'kinefx::resamples
+plinetransforms': <hou.SopVerb kinefx::resamplesplinetransforms>, 'watershed': <hou
+.SopVerb watershed>, 'xform': <hou.SopVerb xform>, 'vdbrenormalizesdf': <hou.SopVer
+b vdbrenormalizesdf>, 'merge': <hou.SopVerb merge>, 'vdb': <hou.SopVerb vdb>, 'vdbr
+eshapesdf': <hou.SopVerb vdbreshapesdf>, 'output': <hou.SopVerb output>, 'volumefea
+ther': <hou.SopVerb volumefeather>, 'groupdelete': <hou.SopVerb groupdelete>, 'copy
+topoints': <hou.SopVerb copytopoints>, 'uvlayout::3.0': <hou.SopVerb uvlayout::3.0>
+, 'uvunwrap': <hou.SopVerb uvunwrap>, 'volumefromattrib': <hou.SopVerb volumefromat
+trib>, 'uvflatten::3.0': <hou.SopVerb uvflatten::3.0>, 'triangulate2d::2.0': <hou.S
+opVerb triangulate2d::2.0>, 'intersectionstitch': <hou.SopVerb intersectionstitch>,
+ 'vdbfracture': <hou.SopVerb vdbfracture>, 'kinefx::motionclipunpack': <hou.SopVerb
+ kinefx::motionclipunpack>, 'measure': <hou.SopVerb measure>, 'detangle': <hou.SopV
+erb detangle>, 'vdbfromparticles': <hou.SopVerb vdbfromparticles>, 'volumevop': <ho
+u.SopVerb volumevop>, 'vdbvectorsplit': <hou.SopVerb vdbvectorsplit>, 'grouprange':
+ <hou.SopVerb grouprange>, 'vdbpointsdelete': <hou.SopVerb vdbpointsdelete>, 'kinef
+x::rigattribvop': <hou.SopVerb kinefx::rigattribvop>, 'tube': <hou.SopVerb tube>, '
+edgetransport': <hou.SopVerb edgetransport>, 'vdbactivatesdf': <hou.SopVerb vdbacti
+vatesdf>, 'extracttransform': <hou.SopVerb extracttransform>, 'vdbpointsgroup': <ho
+u.SopVerb vdbpointsgroup>, 'vdbtopologytosdf': <hou.SopVerb vdbtopologytosdf>, 'tet
+rahedralize': <hou.SopVerb tetrahedralize>, 'vdbdiagnostics': <hou.SopVerb vdbdiagn
+ostics>, 'kinefx::usdanimimport': <hou.SopVerb kinefx::usdanimimport>, 'vdbanalysis
+': <hou.SopVerb vdbanalysis>, 'knife': <hou.SopVerb knife>, 'polydoctor': <hou.SopV
+erb polydoctor>, 'ends': <hou.SopVerb ends>, 'primitivesplit': <hou.SopVerb primiti
+vesplit>, 'attribfromparm': <hou.SopVerb attribfromparm>, 'vdbvisualizetree': <hou.
+SopVerb vdbvisualizetree>, 'uvproject': <hou.SopVerb uvproject>, 'guidemask': <hou.
+SopVerb guidemask>, 'vdbmorphsdf': <hou.SopVerb vdbmorphsdf>, 'vdbclip': <hou.SopVe
+rb vdbclip>, 'polyreduce::2.0': <hou.SopVerb polyreduce::2.0>, 'volumebound': <hou.
+SopVerb volumebound>, 'box': <hou.SopVerb box>, 'convert': <hou.SopVerb convert>, '
+orientalongcurve': <hou.SopVerb orientalongcurve>, 'volumeslice': <hou.SopVerb volu
+meslice>, 'reverse': <hou.SopVerb reverse>, 'remesh': <hou.SopVerb remesh>, 'invoke
+graph': <hou.SopVerb invokegraph>, 'fuse::2.0': <hou.SopVerb fuse::2.0>, 'boolean::
+2.0': <hou.SopVerb boolean::2.0>, 'facet': <hou.SopVerb facet>, 'uvflatten::2.0': <
+hou.SopVerb uvflatten::2.0>, 'sblend::2.0': <hou.SopVerb sblend::2.0>, 'grouptransf
+er': <hou.SopVerb grouptransfer>, 'kinefx::motionclipmergejoints': <hou.SopVerb kin
+efx::motionclipmergejoints>, 'pack': <hou.SopVerb pack>, 'groupcombine': <hou.SopVe
+rb groupcombine>, 'polybevel::3.0': <hou.SopVerb polybevel::3.0>, 'primitive': <hou
+.SopVerb primitive>, 'divide': <hou.SopVerb divide>, 'vdbcombine': <hou.SopVerb vdb
+combine>, 'smoothfill': <hou.SopVerb smoothfill>, 'blendshapes': <hou.SopVerb blend
+shapes>, 'bound': <hou.SopVerb bound>, 'vdbsmooth': <hou.SopVerb vdbsmooth>, 'vdbpo
+tentialflow': <hou.SopVerb vdbpotentialflow>, 'volumerasterizeparticles': <hou.SopV
+erb volumerasterizeparticles>, 'enumerate': <hou.SopVerb enumerate>, 'attribcopy': 
+<hou.SopVerb attribcopy>, 'convertvdbpoints': <hou.SopVerb convertvdbpoints>, 'circ
+lefromedges': <hou.SopVerb circlefromedges>, 'measure::2.0': <hou.SopVerb measure::
+2.0>, 'blendshapes::2.0': <hou.SopVerb blendshapes::2.0>, 'attribcast': <hou.SopVer
+b attribcast>, 'volumebreak': <hou.SopVerb volumebreak>, 'vdbvectormerge': <hou.Sop
+Verb vdbvectormerge>, 'voronoisplit': <hou.SopVerb voronoisplit>, 'shapediff': <hou
+.SopVerb shapediff>, 'subdivide': <hou.SopVerb subdivide>, 'sweep::2.0': <hou.SopVe
+rb sweep::2.0>, 'attribswap': <hou.SopVerb attribswap>, 'switchif': <hou.SopVerb sw
+itchif>, 'bonecapturebiharmonic': <hou.SopVerb bonecapturebiharmonic>, 'tetrasurfac
+e': <hou.SopVerb tetrasurface>, 'uvtransform::2.0': <hou.SopVerb uvtransform::2.0>,
+ 'groupcreate': <hou.SopVerb groupcreate>, 'sblend': <hou.SopVerb sblend>, 'polycut
+': <hou.SopVerb polycut>, 'sort': <hou.SopVerb sort>, 'volumeresample': <hou.SopVer
+b volumeresample>, 'kinefx::usdskinimport': <hou.SopVerb kinefx::usdskinimport>, 'v
+dbadvectsdf': <hou.SopVerb vdbadvectsdf>, 'volumereduce': <hou.SopVerb volumereduce
+>, 'volumesdf': <hou.SopVerb volumesdf>, 'vdbocclusionmask': <hou.SopVerb vdbocclus
+ionmask>, 'captureattribpack': <hou.SopVerb captureattribpack>, 'attribcreate::2.0'
+: <hou.SopVerb attribcreate::2.0>, 'splitpoints': <hou.SopVerb splitpoints>, 'volum
+e': <hou.SopVerb volume>, 'windingnumber': <hou.SopVerb windingnumber>, 'copytopoin
+ts::2.0': <hou.SopVerb copytopoints::2.0>, 'line': <hou.SopVerb line>, 'unpack': <h
+ou.SopVerb unpack>, 'circle': <hou.SopVerb circle>, 'volumecompress': <hou.SopVerb 
+volumecompress>, 'smooth::2.0': <hou.SopVerb smooth::2.0>, 'join': <hou.SopVerb joi
+n>, 'volumefft': <hou.SopVerb volumefft>, 'dissolve::2.0': <hou.SopVerb dissolve::2
+.0>, 'sphere': <hou.SopVerb sphere>, 'vertexsplit': <hou.SopVerb vertexsplit>, 'vdb
+frompolygons': <hou.SopVerb vdbfrompolygons>, 'grouppromote': <hou.SopVerb grouppro
+mote>, 'extractcentroid': <hou.SopVerb extractcentroid>, 'copyxform': <hou.SopVerb 
+copyxform>, 'uvlayout::2.0': <hou.SopVerb uvlayout::2.0>, 'rewire': <hou.SopVerb re
+wire>, 'vdbsegmentbyconnectivity': <hou.SopVerb vdbsegmentbyconnectivity>, 'vdbsmoo
+thsdf': <hou.SopVerb vdbsmoothsdf>, 'scatter::2.0': <hou.SopVerb scatter::2.0>, 'er
+ror': <hou.SopVerb error>, 'xformaxis': <hou.SopVerb xformaxis>, 'volumearrivaltime
+': <hou.SopVerb volumearrivaltime>, 'delete': <hou.SopVerb delete>, 'control': <hou
+.SopVerb control>, 'volumeconvolve3': <hou.SopVerb volumeconvolve3>, 'xformbyattrib
+': <hou.SopVerb xformbyattrib>, 'convexdecomposition': <hou.SopVerb convexdecomposi
+tion>, 'clip': <hou.SopVerb clip>, 'groupcopy': <hou.SopVerb groupcopy>, 'attribute
+': <hou.SopVerb attribute>, 'cop2net': <hou.SopVerb cop2net>, 'cluster': <hou.SopVe
+rb cluster>, 'vdbtospheres': <hou.SopVerb vdbtospheres>, 'attribpromote': <hou.SopV
+erb attribpromote>, 'file': <hou.SopVerb file>, 'remesh::2.0': <hou.SopVerb remesh:
+:2.0>, 'vdbresample': <hou.SopVerb vdbresample>, 'null': <hou.SopVerb null>, 'ray':
+ <hou.SopVerb ray>, 'attribcomposite': <hou.SopVerb attribcomposite>, 'tetpartition
+': <hou.SopVerb tetpartition>, 'grouprename': <hou.SopVerb grouprename>, 'polyfill'
+: <hou.SopVerb polyfill>, 'volumeanalysis': <hou.SopVerb volumeanalysis>, 'volumevi
+sualization': <hou.SopVerb volumevisualization>, 'kinefx::computerigpose': <hou.Sop
+Verb kinefx::computerigpose>, 'resample': <hou.SopVerb resample>, 'uvautoseam': <ho
+u.SopVerb uvautoseam>, 'triangulate2d::3.0': <hou.SopVerb triangulate2d::3.0>, 'del
+tamush': <hou.SopVerb deltamush>, 'solidify': <hou.SopVerb solidify>, 'attribinterp
+olate': <hou.SopVerb attribinterpolate>, 'edgeequalize': <hou.SopVerb edgeequalize>
+, 'groupexpand': <hou.SopVerb groupexpand>, 'normal': <hou.SopVerb normal>, 'hairge
+ncore': <hou.SopVerb hairgencore>, 'vdbprojectnondivergent': <hou.SopVerb vdbprojec
+tnondivergent>, 'guideprocesscore': <hou.SopVerb guideprocesscore>, 'kinefx::comput
+etransform': <hou.SopVerb kinefx::computetransform>, 'connectivity': <hou.SopVerb c
+onnectivity>, 'shrinkwrap::2.0': <hou.SopVerb shrinkwrap::2.0>, 'fuse': <hou.SopVer
+b fuse>, 'packpoints': <hou.SopVerb packpoints>, 'peak': <hou.SopVerb peak>, 'revol
+ve': <hou.SopVerb revolve>, 'tetcraft': <hou.SopVerb tetcraft>, 'volumeresize': <ho
+u.SopVerb volumeresize>, 'polyexpand2d': <hou.SopVerb polyexpand2d>, 'torus': <hou.
+SopVerb torus>, 'inflate': <hou.SopVerb inflate>, 'curve': <hou.SopVerb curve>, 'st
+ash': <hou.SopVerb stash>, 'attribmirror': <hou.SopVerb attribmirror>, 'switch': <h
+ou.SopVerb switch>, 'volumepatch': <hou.SopVerb volumepatch>, 'attribstringedit': <
+hou.SopVerb attribstringedit>, 'volumebin': <hou.SopVerb volumebin>}
+>>> 
+
+
+
+
+
+
+ 
+>>> 
+>>> 
+>>> hou.shopNodeTypeCategory().nodeVerbs()
+{'groupfindpath': <hou.SopVerb groupfindpath>, 'attribvop': <hou.SopVerb attribvop>
+, 'captureattribunpack': <hou.SopVerb captureattribunpack>, 'edgedivide': <hou.SopV
+erb edgedivide>, 'volumeblur': <hou.SopVerb volumeblur>, 'agentunpack': <hou.SopVer
+b agentunpack>, 'surfacesplat': <hou.SopVerb surfacesplat>, 'vdbactivate': <hou.Sop
+Verb vdbactivate>, 'topnetsop': <hou.SopVerb topnetsop>, 'skin': <hou.SopVerb skin>
+, 'volumesplice': <hou.SopVerb volumesplice>, 'font': <hou.SopVerb font>, 'volumeme
+rge': <hou.SopVerb volumemerge>, 'attribreorient': <hou.SopVerb attribreorient>, 'o
+pencl': <hou.SopVerb opencl>, 'texture': <hou.SopVerb texture>, 'unpackpoints': <ho
+u.SopVerb unpackpoints>, 'add': <hou.SopVerb add>, 'intersectionanalysis': <hou.Sop
+Verb intersectionanalysis>, 'isooffset': <hou.SopVerb isooffset>, 'carve': <hou.Sop
+Verb carve>, 'topotransfer': <hou.SopVerb topotransfer>, 'attribfromvolume': <hou.S
+opVerb attribfromvolume>, 'polysoup': <hou.SopVerb polysoup>, 'bonedeform': <hou.So
+pVerb bonedeform>, 'polyframe': <hou.SopVerb polyframe>, 'matchtopology': <hou.SopV
+erb matchtopology>, 'volumeopticalflow': <hou.SopVerb volumeopticalflow>, 'grid': <
+hou.SopVerb grid>, 'rest': <hou.SopVerb rest>, 'hairclump': <hou.SopVerb hairclump>
+, 'blast': <hou.SopVerb blast>, 'pointgenerate': <hou.SopVerb pointgenerate>, 'name
+': <hou.SopVerb name>, 'volumemix': <hou.SopVerb volumemix>, 'vdblod': <hou.SopVerb
+ vdblod>, 'convertvdb': <hou.SopVerb convertvdb>, 'edgestraighten': <hou.SopVerb ed
+gestraighten>, 'vdbadvectpoints': <hou.SopVerb vdbadvectpoints>, 'kinefx::resamples
+plinetransforms': <hou.SopVerb kinefx::resamplesplinetransforms>, 'watershed': <hou
+.SopVerb watershed>, 'xform': <hou.SopVerb xform>, 'vdbrenormalizesdf': <hou.SopVer
+b vdbrenormalizesdf>, 'merge': <hou.SopVerb merge>, 'vdb': <hou.SopVerb vdb>, 'vdbr
+eshapesdf': <hou.SopVerb vdbreshapesdf>, 'output': <hou.SopVerb output>, 'volumefea
+ther': <hou.SopVerb volumefeather>, 'groupdelete': <hou.SopVerb groupdelete>, 'copy
+topoints': <hou.SopVerb copytopoints>, 'uvlayout::3.0': <hou.SopVerb uvlayout::3.0>
+, 'uvunwrap': <hou.SopVerb uvunwrap>, 'volumefromattrib': <hou.SopVerb volumefromat
+trib>, 'uvflatten::3.0': <hou.SopVerb uvflatten::3.0>, 'triangulate2d::2.0': <hou.S
+opVerb triangulate2d::2.0>, 'intersectionstitch': <hou.SopVerb intersectionstitch>,
+ 'vdbfracture': <hou.SopVerb vdbfracture>, 'kinefx::motionclipunpack': <hou.SopVerb
+ kinefx::motionclipunpack>, 'measure': <hou.SopVerb measure>, 'detangle': <hou.SopV
+erb detangle>, 'vdbfromparticles': <hou.SopVerb vdbfromparticles>, 'volumevop': <ho
+u.SopVerb volumevop>, 'vdbvectorsplit': <hou.SopVerb vdbvectorsplit>, 'grouprange':
+ <hou.SopVerb grouprange>, 'vdbpointsdelete': <hou.SopVerb vdbpointsdelete>, 'kinef
+x::rigattribvop': <hou.SopVerb kinefx::rigattribvop>, 'tube': <hou.SopVerb tube>, '
+edgetransport': <hou.SopVerb edgetransport>, 'vdbactivatesdf': <hou.SopVerb vdbacti
+vatesdf>, 'extracttransform': <hou.SopVerb extracttransform>, 'vdbpointsgroup': <ho
+u.SopVerb vdbpointsgroup>, 'vdbtopologytosdf': <hou.SopVerb vdbtopologytosdf>, 'tet
+rahedralize': <hou.SopVerb tetrahedralize>, 'vdbdiagnostics': <hou.SopVerb vdbdiagn
+ostics>, 'kinefx::usdanimimport': <hou.SopVerb kinefx::usdanimimport>, 'vdbanalysis
+': <hou.SopVerb vdbanalysis>, 'knife': <hou.SopVerb knife>, 'polydoctor': <hou.SopV
+erb polydoctor>, 'ends': <hou.SopVerb ends>, 'primitivesplit': <hou.SopVerb primiti
+vesplit>, 'attribfromparm': <hou.SopVerb attribfromparm>, 'vdbvisualizetree': <hou.
+SopVerb vdbvisualizetree>, 'uvproject': <hou.SopVerb uvproject>, 'guidemask': <hou.
+SopVerb guidemask>, 'vdbmorphsdf': <hou.SopVerb vdbmorphsdf>, 'vdbclip': <hou.SopVe
+rb vdbclip>, 'polyreduce::2.0': <hou.SopVerb polyreduce::2.0>, 'volumebound': <hou.
+SopVerb volumebound>, 'box': <hou.SopVerb box>, 'convert': <hou.SopVerb convert>, '
+orientalongcurve': <hou.SopVerb orientalongcurve>, 'volumeslice': <hou.SopVerb volu
+meslice>, 'reverse': <hou.SopVerb reverse>, 'remesh': <hou.SopVerb remesh>, 'invoke
+graph': <hou.SopVerb invokegraph>, 'fuse::2.0': <hou.SopVerb fuse::2.0>, 'boolean::
+2.0': <hou.SopVerb boolean::2.0>, 'facet': <hou.SopVerb facet>, 'uvflatten::2.0': <
+hou.SopVerb uvflatten::2.0>, 'sblend::2.0': <hou.SopVerb sblend::2.0>, 'grouptransf
+er': <hou.SopVerb grouptransfer>, 'kinefx::motionclipmergejoints': <hou.SopVerb kin
+efx::motionclipmergejoints>, 'pack': <hou.SopVerb pack>, 'groupcombine': <hou.SopVe
+rb groupcombine>, 'polybevel::3.0': <hou.SopVerb polybevel::3.0>, 'primitive': <hou
+.SopVerb primitive>, 'divide': <hou.SopVerb divide>, 'vdbcombine': <hou.SopVerb vdb
+combine>, 'smoothfill': <hou.SopVerb smoothfill>, 'blendshapes': <hou.SopVerb blend
+shapes>, 'bound': <hou.SopVerb bound>, 'vdbsmooth': <hou.SopVerb vdbsmooth>, 'vdbpo
+tentialflow': <hou.SopVerb vdbpotentialflow>, 'volumerasterizeparticles': <hou.SopV
+erb volumerasterizeparticles>, 'enumerate': <hou.SopVerb enumerate>, 'attribcopy': 
+<hou.SopVerb attribcopy>, 'convertvdbpoints': <hou.SopVerb convertvdbpoints>, 'circ
+lefromedges': <hou.SopVerb circlefromedges>, 'measure::2.0': <hou.SopVerb measure::
+2.0>, 'blendshapes::2.0': <hou.SopVerb blendshapes::2.0>, 'attribcast': <hou.SopVer
+b attribcast>, 'volumebreak': <hou.SopVerb volumebreak>, 'vdbvectormerge': <hou.Sop
+Verb vdbvectormerge>, 'voronoisplit': <hou.SopVerb voronoisplit>, 'shapediff': <hou
+.SopVerb shapediff>, 'subdivide': <hou.SopVerb subdivide>, 'sweep::2.0': <hou.SopVe
+rb sweep::2.0>, 'attribswap': <hou.SopVerb attribswap>, 'switchif': <hou.SopVerb sw
+itchif>, 'bonecapturebiharmonic': <hou.SopVerb bonecapturebiharmonic>, 'tetrasurfac
+e': <hou.SopVerb tetrasurface>, 'uvtransform::2.0': <hou.SopVerb uvtransform::2.0>,
+ 'groupcreate': <hou.SopVerb groupcreate>, 'sblend': <hou.SopVerb sblend>, 'polycut
+': <hou.SopVerb polycut>, 'sort': <hou.SopVerb sort>, 'volumeresample': <hou.SopVer
+b volumeresample>, 'kinefx::usdskinimport': <hou.SopVerb kinefx::usdskinimport>, 'v
+dbadvectsdf': <hou.SopVerb vdbadvectsdf>, 'volumereduce': <hou.SopVerb volumereduce
+>, 'volumesdf': <hou.SopVerb volumesdf>, 'vdbocclusionmask': <hou.SopVerb vdbocclus
+ionmask>, 'captureattribpack': <hou.SopVerb captureattribpack>, 'attribcreate::2.0'
+: <hou.SopVerb attribcreate::2.0>, 'splitpoints': <hou.SopVerb splitpoints>, 'volum
+e': <hou.SopVerb volume>, 'windingnumber': <hou.SopVerb windingnumber>, 'copytopoin
+ts::2.0': <hou.SopVerb copytopoints::2.0>, 'line': <hou.SopVerb line>, 'unpack': <h
+ou.SopVerb unpack>, 'circle': <hou.SopVerb circle>, 'volumecompress': <hou.SopVerb 
+volumecompress>, 'smooth::2.0': <hou.SopVerb smooth::2.0>, 'join': <hou.SopVerb joi
+n>, 'volumefft': <hou.SopVerb volumefft>, 'dissolve::2.0': <hou.SopVerb dissolve::2
+.0>, 'sphere': <hou.SopVerb sphere>, 'vertexsplit': <hou.SopVerb vertexsplit>, 'vdb
+frompolygons': <hou.SopVerb vdbfrompolygons>, 'grouppromote': <hou.SopVerb grouppro
+mote>, 'extractcentroid': <hou.SopVerb extractcentroid>, 'copyxform': <hou.SopVerb 
+copyxform>, 'uvlayout::2.0': <hou.SopVerb uvlayout::2.0>, 'rewire': <hou.SopVerb re
+wire>, 'vdbsegmentbyconnectivity': <hou.SopVerb vdbsegmentbyconnectivity>, 'vdbsmoo
+thsdf': <hou.SopVerb vdbsmoothsdf>, 'scatter::2.0': <hou.SopVerb scatter::2.0>, 'er
+ror': <hou.SopVerb error>, 'xformaxis': <hou.SopVerb xformaxis>, 'volumearrivaltime
+': <hou.SopVerb volumearrivaltime>, 'delete': <hou.SopVerb delete>, 'control': <hou
+.SopVerb control>, 'volumeconvolve3': <hou.SopVerb volumeconvolve3>, 'xformbyattrib
+': <hou.SopVerb xformbyattrib>, 'convexdecomposition': <hou.SopVerb convexdecomposi
+tion>, 'clip': <hou.SopVerb clip>, 'groupcopy': <hou.SopVerb groupcopy>, 'attribute
+': <hou.SopVerb attribute>, 'cop2net': <hou.SopVerb cop2net>, 'cluster': <hou.SopVe
+rb cluster>, 'vdbtospheres': <hou.SopVerb vdbtospheres>, 'attribpromote': <hou.SopV
+erb attribpromote>, 'file': <hou.SopVerb file>, 'remesh::2.0': <hou.SopVerb remesh:
+:2.0>, 'vdbresample': <hou.SopVerb vdbresample>, 'null': <hou.SopVerb null>, 'ray':
+ <hou.SopVerb ray>, 'attribcomposite': <hou.SopVerb attribcomposite>, 'tetpartition
+': <hou.SopVerb tetpartition>, 'grouprename': <hou.SopVerb grouprename>, 'polyfill'
+: <hou.SopVerb polyfill>, 'volumeanalysis': <hou.SopVerb volumeanalysis>, 'volumevi
+sualization': <hou.SopVerb volumevisualization>, 'kinefx::computerigpose': <hou.Sop
+Verb kinefx::computerigpose>, 'resample': <hou.SopVerb resample>, 'uvautoseam': <ho
+u.SopVerb uvautoseam>, 'triangulate2d::3.0': <hou.SopVerb triangulate2d::3.0>, 'del
+tamush': <hou.SopVerb deltamush>, 'solidify': <hou.SopVerb solidify>, 'attribinterp
+olate': <hou.SopVerb attribinterpolate>, 'edgeequalize': <hou.SopVerb edgeequalize>
+, 'groupexpand': <hou.SopVerb groupexpand>, 'normal': <hou.SopVerb normal>, 'hairge
+ncore': <hou.SopVerb hairgencore>, 'vdbprojectnondivergent': <hou.SopVerb vdbprojec
+tnondivergent>, 'guideprocesscore': <hou.SopVerb guideprocesscore>, 'kinefx::comput
+etransform': <hou.SopVerb kinefx::computetransform>, 'connectivity': <hou.SopVerb c
+onnectivity>, 'shrinkwrap::2.0': <hou.SopVerb shrinkwrap::2.0>, 'fuse': <hou.SopVer
+b fuse>, 'packpoints': <hou.SopVerb packpoints>, 'peak': <hou.SopVerb peak>, 'revol
+ve': <hou.SopVerb revolve>, 'tetcraft': <hou.SopVerb tetcraft>, 'volumeresize': <ho
+u.SopVerb volumeresize>, 'polyexpand2d': <hou.SopVerb polyexpand2d>, 'torus': <hou.
+SopVerb torus>, 'inflate': <hou.SopVerb inflate>, 'curve': <hou.SopVerb curve>, 'st
+ash': <hou.SopVerb stash>, 'attribmirror': <hou.SopVerb attribmirror>, 'switch': <h
+ou.SopVerb switch>, 'volumepatch': <hou.SopVerb volumepatch>, 'attribstringedit': <
+hou.SopVerb attribstringedit>, 'volumebin': <hou.SopVerb volumebin>}
+>>> 
