@@ -90,19 +90,23 @@ def create_large_button(t_tuple = (0,0,0)):
         height=button_height
     )
 
-def poly_extrude(dest):
-    print("Poly Extrude") 
-    scatter = hou.sopNodeTypeCategory().nodeVerb("scatter::2.0")
-    
-    
+def boolean(source, modifier):
+    boolean_verb = hou.sopNodeTypeCategory().nodeVerb("boolean::2.0")
     buffer = hou.Geometry()
-    
+    boolean_verb.setParms({ 
+                    "booleanop": 2
+               })
+    boolean_verb.execute(buffer, [source, modifier])
+    geo.merge(buffer)
+
+
+def scatter(dest):
+    scatter = hou.sopNodeTypeCategory().nodeVerb("scatter::2.0")
+    buffer = hou.Geometry()
     scatter.setParms({ 
                 'group': "large_circle_button"
                })
-
     scatter.execute(buffer, [dest])
-    
     geo.merge(buffer)
     
     
@@ -122,32 +126,46 @@ def create_number_pad():
 
 def create_circle_button():
     inner_circle_radius = .2
-    outer_circle_radius = inner_circle_radius + .1
+    outer_circle_radius = inner_circle_radius + .6
 
     create_tube(
         radscale=inner_circle_radius,
         height=button_height + .2
     )
 
-    tube = create_tube(
+    modifier_circle = create_tube(
+        merge=False,
+        radscale=inner_circle_radius + .1,
+        height=button_height + .2
+    )
+
+    outer_circle = create_tube(
         merge=False,
         radscale=outer_circle_radius,
         height=button_height,
-        cap=False,
         group_name="large_circle_button"
     )
 
-    poly_extrude(tube)
+    boolean(outer_circle, modifier_circle)
+    
 
 def create_menu_buttons():
+    circle_radius = 1
+    
     for i in range(1,4):
+        t_v = hou.Vector3(circle_radius, button_height/2, 0)
+        rotation_matrix = hou.hmath.buildRotate(0, 45 * i, 0)
+        t_tuple = t_v * rotation_matrix
         create_large_button(
-            t_tuple=(i, button_height/2, 3)
+            t_tuple=t_tuple
         )
 
     for i in range(1,4):
+        t_v = hou.Vector3(circle_radius, button_height/2, 0)
+        rotation_matrix = hou.hmath.buildRotate(0, -45 * i, 0)
+        t_tuple = t_v * rotation_matrix
         create_large_button(
-            t_tuple=(i, button_height/2, 5)
+            t_tuple=t_tuple
         )
 
     create_circle_button()
@@ -185,10 +203,10 @@ def create_app_buttons():
             size_tuple=(small_box_button_length, button_height, small_box_button_width)
         )
 
-# create_number_pad()
+create_number_pad()
 create_menu_buttons()
-# create_play_buttons()
-# create_app_buttons()
+create_play_buttons()
+create_app_buttons()
 
 printPointGroupNames(geo)
 
