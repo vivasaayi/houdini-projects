@@ -1,15 +1,7 @@
 import os
-
 os.environ['HOUDINI_SCRIPT_LICENSE'] = 'hescape'
 
 import hou
-
-print("Welcome to Python Programming")
-
-try:
-    hou.hipFile.load("test.hipnc")
-except hou.LoadWarning as e:
-    print(e)
 
 hou.hipFile.clear()
 
@@ -23,8 +15,6 @@ box2.parm("sizey").set(2)
 box2.parm("sizey").set(2)
 
 box2.parmTuple("size").set((1.5, 1.5, 1.5))
-
-
 box2.parm("tx").set(1.5)
 
 box1Color = geo.createNode("color")
@@ -39,8 +29,17 @@ mergeNode = geo.createNode("merge")
 mergeNode.setInput(0, box1Color)
 mergeNode.setInput(1, box2Color)
 mergeNode.setDisplayFlag(True)
+mergeNode.setRenderFlag(True)
 
-grid = geo.createNode("grid")
-copyToPoints1 = geo.createNode("copytopoints")
+cam = hou.node("/obj").createNode("cam")
+cam.parmTuple("t").set((0, 5, 4))
+cam.parmTuple("r").set((-45, 0, 0))
 
-hou.hipFile.save("modified.hipnc")
+geo.layoutChildren()
+hou.node("/obj").layoutChildren()
+
+mantra = hou.node("/out").createNode("ifd")
+mantra.parm("vm_picture").set("/Users/rajanp/work/houdini/simple-cube.jpg")
+mantra.render()
+
+hou.hipFile.save("simple-cube.hipnc")

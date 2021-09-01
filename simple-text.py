@@ -4,8 +4,6 @@ os.environ['HOUDINI_SCRIPT_LICENSE'] = 'hescape'
 
 import hou
 
-print("Welcome to Python Programming")
-
 try:
     hou.hipFile.load("test.hipnc")
 except hou.LoadWarning as e:
@@ -53,4 +51,4 @@ for index, (text, url) in enumerate(links):
 # Fix the layout of the new nodes in the network editor
 hou.node("/obj").layoutChildren()
 
-hou.hipFile.save("modified.hipnc")
+hou.hipFile.save("text.hipnc")

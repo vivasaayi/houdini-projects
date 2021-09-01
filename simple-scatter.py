@@ -58,4 +58,4 @@ copyToPoints1.setDisplayFlag(True)
 
 geo.layoutChildren()
 
-hou.hipFile.save("modified-scatter.hipnc")
+hou.hipFile.save("simple-scatter.hipnc")
