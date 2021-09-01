@@ -32,7 +32,7 @@ colorObj.parm("seed").set(2.39)
 nullObj.setDisplayFlag(True)
 
 cam = hou.node("/obj").createNode("cam")
-cam.parmTuple("t").set((-8, 4, 4))
+cam.parmTuple("t").set((-9, 4, 4))
 cam.parmTuple("r").set((-90, -90, 60))
 
 geo.layoutChildren()

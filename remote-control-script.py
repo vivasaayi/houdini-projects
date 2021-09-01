@@ -9,26 +9,14 @@ temp = hou.Geometry()
 remote_width = 1.5
 remote_length = 8
 remote_height=0.3
-remote_x_origin = remote_width/2
+
+remote_x_origin = 0
 remote_y_origin = -remote_height/2
 remote_z_origin = remote_length/2
+remote_margin = .05
+remote_actual_space = remote_width - (2*remote_margin)
 
 button_height = 0.1
-
-num_pad_offset = 0.3
-num_pad_start_x = remote_x_origin
-
-app_buttons_offset = 1.8
-app_buttons_start_x =  app_buttons_offset
-
-menu_buttons_offset = 2.5
-menu_buttons_start_x = menu_buttons_offset
-
-menu_buttons_offset = 4
-
-play_button_offset = 5.5
-play_buttons_start_x = play_button_offset
-
 color_attribute_added = False
 
 # small Button Properties
@@ -37,13 +25,52 @@ small_button_radius = small_button_diameter/2
 
 
 # Medium Button Properties
-medium_button_diameter = remote_width/7
+medium_button_diameter = remote_actual_space/6
 medium_button_radius = medium_button_diameter/2
+medium_button_space = (medium_button_diameter * 2) 
 
 # Large Button Properties
 large_button_diameter = remote_width/6
 large_button_radius = large_button_diameter/2
 
+
+num_pad_offset = 0
+num_pad_length = (medium_button_diameter * 4) + (medium_button_space * 3)
+num_pad_z_center = (num_pad_length/2) + num_pad_offset
+num_pad_z_top_left = num_pad_z_center - (num_pad_length/2)
+
+# 3 buttons + space between them
+num_pad_width = (medium_button_diameter * 3) + (medium_button_space * 2)
+num_pad_x_center = 0
+num_pad_x_top_left = num_pad_x_center - (num_pad_width/2) 
+
+app_buttons_offset = num_pad_offset + num_pad_length
+app_big_button_x_space = .1
+app_big_button_z_space = .1
+app_big_buttonpad_x_spaces = (4 * app_big_button_x_space)
+app_big_button_width = (remote_actual_space - app_big_buttonpad_x_spaces)/2
+app_big_buttonpad_z_spaces = (2 * app_big_button_z_space)
+app_big_button_length = .3
+app_buttons_x_center = 0
+app_big_buttons_y_center = app_buttons_offset + (app_big_button_length/2)
+
+app_small_button_x_space = .1
+app_small_button_x_spaces = 8 * app_small_button_x_space
+app_small_buttons_width = (remote_actual_space - app_small_button_x_spaces)/4
+app_small_buttons_length = .1
+
+app_button_pad_width = (remote_actual_space - app_big_button_x_space)
+
+menu_buttons_offset = 2.5
+menu_buttons_start_x = menu_buttons_offset
+
+inner_circle_radius = (remote_actual_space - .2)/6
+outer_circle_radius = (remote_actual_space - .2)/2
+
+menu_buttons_offset = 4
+
+play_button_offset = 5.5
+play_buttons_start_x = play_button_offset
 
 def create_box(t_tuple = (0,0,0), size_tuple = (1,1,1), group_name = None, color=None):
     boxVerb = hou.sopNodeTypeCategory().nodeVerb("box")    
@@ -154,32 +181,43 @@ def scatter(dest):
 def create_number_pad():
     group_name = "numpad"
     color = 1
-    z_index = 0
-    x_index = 0
-    button_space = (medium_button_diameter *2) 
+
+    # create_box(
+    #     color=color,
+    #     group_name=group_name,
+    #     t_tuple=(0, 0, num_pad_z_center),
+    #     size_tuple=(num_pad_width, 0, num_pad_length)
+    # )
+
+    x_button_space = num_pad_width/4
+    z_button_space = num_pad_length/5
+
+    x_index = num_pad_x_top_left + x_button_space
+    z_index = num_pad_z_top_left + z_button_space
+
     for i in range(1,13):
-        x_index = x_index + button_space
         create_medium_button(
             color=color,
             group_name=group_name,
             t_tuple=(x_index, button_height/2, z_index)
         )
+
+        x_index = x_index + x_button_space
+
         if(i % 3 == 0):
-            x_index = 0
-            z_index = z_index + button_space
+            x_index = num_pad_x_top_left + x_button_space
+            z_index = z_index + z_button_space
 
 def create_circle_button():
     color=5
     group_name="large_circle_button"
-    inner_circle_radius = .2
-    outer_circle_radius = inner_circle_radius + .6
 
     create_tube(
         t_tuple=(0, 0, menu_buttons_offset),
         color=color,
         group_name=group_name,
         radscale=inner_circle_radius,
-        height=button_height + .2
+        height=button_height
     )
 
     modifier_circle = create_tube(
@@ -205,7 +243,7 @@ def create_circle_button():
 def create_menu_buttons():
     group_name = "menu"
     color = 4
-    circle_radius = 1
+    circle_radius = outer_circle_radius + large_button_radius + .1
     
     for i in range(1,4):
         t_v = hou.Vector3(circle_radius, button_height/2, 0)
@@ -235,8 +273,9 @@ def create_play_buttons():
     group_name = "playbuttons"
     color = 2
     z_index = play_button_offset
-    x_index = 0
+    x_index = (-num_pad_width/2) + small_button_diameter
     button_space = (small_button_diameter *2) 
+    
     for i in range(1,10):
         x_index = x_index + button_space
         create_small_button(
@@ -245,34 +284,37 @@ def create_play_buttons():
             t_tuple=(x_index, button_height/2, z_index)
         )
         if(i % 3 == 0):
-            x_index = 0
+            x_index = (-num_pad_width/2) + small_button_diameter
             z_index = z_index + button_space
 
 def create_app_buttons():
     color=230
     group_name="appbuttons"
-    big_box_button_length = (remote_width /2) - (remote_width/10)
-    big_box_button_width = big_box_button_length/2
 
-    small_box_button_length = (remote_width /5) - (remote_width/10)
-    small_box_button_width = small_box_button_length/2
+    big_button_x_division = app_button_pad_width/4
+    x_index = app_buttons_x_center - big_button_x_division
 
     for i in range(1,3):
         create_box(
             color=color,
             group_name=group_name,
-            t_tuple=(i, 0, app_buttons_start_x),
-            size_tuple=(big_box_button_length, button_height, big_box_button_width)
+            t_tuple=(x_index, 0, app_big_buttons_y_center),
+            size_tuple=(app_big_button_width, button_height, app_big_button_length)
         )
+        x_index = x_index + (2*big_button_x_division) 
 
-    small_buttons_offset = app_buttons_start_x + big_box_button_width + .4
+
+    small_button_x_division = app_button_pad_width/8
+    x_index = app_buttons_x_center - (3 * small_button_x_division)
+
     for i in range(1,5):
         create_box(
             color=color,
             group_name=group_name,
-            t_tuple=(i, 0, small_buttons_offset),
-            size_tuple=(small_box_button_length, button_height, small_box_button_width)
+            t_tuple=(x_index, 0, app_big_buttons_y_center + .3),
+            size_tuple=(app_small_buttons_width, button_height, app_small_buttons_length)
         )
+        x_index = x_index + (2 * small_button_x_division) 
 
 def create_remote():
     color=78
