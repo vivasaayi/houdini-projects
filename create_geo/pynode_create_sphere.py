@@ -50,6 +50,13 @@ for col in range(0, (columns *2) - 1):
 #        continue
         
         
+
+topPoint = geo.createPoint()
+topPoint.setPosition((0,1,0))
+
+bottomPoint = geo.createPoint()
+bottomPoint.setPosition((0,-1,0))
+
 print("Points Length", len(points), len(row_array))
 for i in range(0, len(points)):
     first_col = points[i]
@@ -59,6 +66,28 @@ for i in range(0, len(points)):
          second_col_inx =0
         
     second_col = points[second_col_inx]
+    
+    top_tri_poly = geo.createPolygon()
+    tt_p1 = topPoint
+    tt_p2 = geo.createPoint()
+    tt_p2.setPosition(first_col[0])
+    tt_p3 = geo.createPoint()
+    tt_p3.setPosition(second_col[0])
+    
+    top_tri_poly.addVertex(tt_p1)
+    top_tri_poly.addVertex(tt_p3)
+    top_tri_poly.addVertex(tt_p2)
+    
+    bottom_tri_poly = geo.createPolygon()
+    tt_p1 = bottomPoint
+    tt_p2 = geo.createPoint()
+    tt_p2.setPosition(first_col[len(first_col) -1])
+    tt_p3 = geo.createPoint()
+    tt_p3.setPosition(second_col[len(second_col) -1])
+    
+    bottom_tri_poly.addVertex(tt_p1)
+    bottom_tri_poly.addVertex(tt_p2)
+    bottom_tri_poly.addVertex(tt_p3)
     
     for ix in range(0, len(first_row) -1):
         poly = geo.createPolygon()
@@ -80,3 +109,5 @@ for i in range(0, len(points)):
         poly.addVertex(point3)
         poly.addVertex(point4)
         continue
+        
+        
