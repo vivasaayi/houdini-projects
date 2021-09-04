@@ -3,8 +3,8 @@ geo = node.geometry()
 
 geo.clear()
 
-rows = 8
-columns = 8
+rows = 30
+columns = 30
 radius = 1.0
 rows_angle = 180.0/rows
 cols_angle = 180.0/columns
@@ -89,7 +89,7 @@ for i in range(0, len(points)):
     bottom_tri_poly.addVertex(tt_p2)
     bottom_tri_poly.addVertex(tt_p3)
     
-    for ix in range(0, len(first_row) -1):
+    for ix in range(0, len(first_col) -1):
         poly = geo.createPolygon()
         p1 = first_col[ix]
         p2 = second_col[ix]
